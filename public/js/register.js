@@ -1,7 +1,7 @@
 function registerMe() {
     var registerUser = new XMLHttpRequest();
 
-    registerUser.open("POST", "http://127.0.0.1:8080/users", true);
+    registerUser.open("POST", "http://ec2-52-91-51-70.compute-1.amazonaws.com:8080/users", true);
     registerUser.setRequestHeader("Content-Type", "application/json");
     registerUser.onload = function () {
         $('#registerModal').modal('hide');
